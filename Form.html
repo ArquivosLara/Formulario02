@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro Pessoal</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grpo">
+            <div class="campo">
+                <label for="Nome"><strong>Nome</strong></label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="Sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" nome="Sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="E-mail"><strong>E-mail</strong></label>
+            <input type="text" nome="E-mail" id="e-mail" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Sexo</strong></label>
+            <label>
+                <input type="radio" nome="genero" value="Feminino">Femenino
+            </label>
+            <label>
+                <input type="radio" nome="genero" value="Masculino">Masculino
+            </label>
+            <label>
+                <input type="radio" nome="genero" value="Outro">Outro
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="Cidade"><strong>Cidade</strong></label>
+            <select id="Cidade">
+                <option selected disabled value="Selecione:"></option>
+                <option>SÃO PAULO</option>
+                <option>GUARULHOS</option>
+                <option>CAMPINAS</option>
+                <option>SANTO ANDRÉ</option>
+                <option>RIBEIRÃO PRETO</option>
+                <option>OSASCO</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Raça:</strong></label><br><br>
+                <input type="checkbox" id="raça1" nome="raça1" value="Pretos">
+                <label for="raça">Pretos</label>
+                <input type="checkbox" id="raça2" nome="raça2" value="Pardos">
+                <label for="raça">Pardos</label>
+                <input type="checkbox" id="raça3" nome="raça3" value="Indígenas">
+                <label for="raça">Indígenas</label>
+                <input type="checkbox" id="raça4" nome="raça4" value="Amarelos">
+                <label for="raça">Amarelos</label>
+                <input type="checkbox" id="raça5" nome="raça5" value="Branco">
+                <label for="raça">Branco</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Comentário:</strong></label>
+            <textarea name="comentario" id="comentario" style="width: 26em;" rows="6"></textarea>
+        </div>
+
+        <button class="botao" type="submit"><strong>Concluído</strong></button>
+    </form>
+</body>
+</html>
